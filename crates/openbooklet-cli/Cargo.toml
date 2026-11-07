@@ -1,0 +1,16 @@
+[package]
+name = "openbooklet-cli"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "Command-line interface for OpenBooklet PDF imposition, bookbinding signatures, cut & stack, and duplex calibration"
+
+[[bin]]
+name = "openbooklet"
+path = "src/main.rs"
+
+[dependencies]
+openbooklet-core = { path = "../openbooklet-core" }
+openbooklet-pdf = { path = "../openbooklet-pdf" }

@@ -1,0 +1,16 @@
+[package]
+name = "openbooklet-app"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "Native macOS AppKit & PDFKit GUI application for OpenBooklet written in Rust"
+
+[[bin]]
+name = "OpenBookletApp"
+path = "src/main.rs"
+
+[dependencies]
+openbooklet-core = { path = "../openbooklet-core" }
+openbooklet-pdf = { path = "../openbooklet-pdf" }

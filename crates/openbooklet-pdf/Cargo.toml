@@ -1,0 +1,15 @@
+[package]
+name = "openbooklet-pdf"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "Vector Quartz 2D (CoreGraphics / CoreText) PDF inspection, imposition renderer, and duplex calibration sheet generator"
+
+[lib]
+name = "openbooklet_pdf"
+path = "src/lib.rs"
+
+[dependencies]
+openbooklet-core = { path = "../openbooklet-core" }

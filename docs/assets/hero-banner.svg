@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" width="100%" height="100%">
+  <defs>
+    <linearGradient id="heroBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16"/>
+      <stop offset="55%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e1b4b"/>
+    </linearGradient>
+    <linearGradient id="winBar" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="620" rx="20" fill="url(#heroBg)"/>
+
+  <!-- macOS App Window Frame -->
+  <rect x="44" y="36" width="1112" height="548" rx="14" fill="#0f172a" stroke="#334155" stroke-width="2"/>
+  <rect x="44" y="36" width="1112" height="38" rx="14" fill="url(#winBar)"/>
+  <!-- Traffic lights -->
+  <circle cx="70" cy="55" r="6.5" fill="#ef4444"/>
+  <circle cx="90" cy="55" r="6.5" fill="#f59e0b"/>
+  <circle cx="110" cy="55" r="6.5" fill="#10b981"/>
+  <text x="600" y="60" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600" text-anchor="middle">
+    OpenBooklet v1.0.0 — Native Vector PDF Imposition, Bookbinding &amp; Prepress Studio
+  </text>
+
+  <!-- Left Sidebar -->
+  <rect x="46" y="74" width="340" height="508" fill="#111827"/>
+  <line x1="386" y1="74" x2="386" y2="582" stroke="#1e293b" stroke-width="2"/>
+
+  <text x="66" y="102" fill="#38bdf8" font-family="-apple-system, sans-serif" font-size="10.5" font-weight="700">1. SOURCE DOCUMENT &amp; 5-BOX INSPECTOR</text>
+  <rect x="66" y="110" width="144" height="26" rx="6" fill="#0284c7"/>
+  <text x="138" y="127" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="11.5" font-weight="600" text-anchor="middle">Open PDF…</text>
+  <rect x="218" y="110" width="148" height="26" rx="6" fill="#1e293b" stroke="#334155"/>
+  <text x="292" y="127" fill="#cbd5e1" font-family="-apple-system, sans-serif" font-size="11.5" text-anchor="middle">Load 16-Page Demo</text>
+  <text x="66" y="152" fill="#94a3b8" font-family="ui-monospace, monospace" font-size="10.5">book-manuscript.pdf — 32 pp (TrimBox Auto)</text>
+
+  <text x="66" y="182" fill="#38bdf8" font-family="-apple-system, sans-serif" font-size="10.5" font-weight="700">2. IMPOSITION MODE &amp; PRESS SHEET</text>
+  <rect x="66" y="190" width="300" height="26" rx="6" fill="#1e293b" stroke="#38bdf8" stroke-width="1.2"/>
+  <text x="78" y="207" fill="#f8fafc" font-family="-apple-system, sans-serif" font-size="11.5" font-weight="600">Multi-Signature Book (Sewn / Glued)   ▾</text>
+  <rect x="66" y="222" width="180" height="24" rx="5" fill="#1e293b" stroke="#334155"/>
+  <text x="78" y="238" fill="#cbd5e1" font-family="-apple-system, sans-serif" font-size="11">A4 (210 × 297 mm)  ▾</text>
+  <rect x="254" y="222" width="112" height="24" rx="5" fill="#1e293b" stroke="#334155"/>
+  <text x="266" y="238" fill="#cbd5e1" font-family="-apple-system, sans-serif" font-size="11">Landscape  ▾</text>
+
+  <text x="66" y="270" fill="#34d399" font-family="-apple-system, sans-serif" font-size="10.5" font-weight="700">3. SIGNATURES, CREEP &amp; FLYLEAVES</text>
+  <rect x="66" y="278" width="184" height="24" rx="5" fill="#1e293b" stroke="#334155"/>
+  <text x="76" y="294" fill="#e2e8f0" font-family="-apple-system, sans-serif" font-size="11">4 Sheets (16 pp / sig)  ▾</text>
+  <rect x="258" y="278" width="108" height="24" rx="5" fill="#090d16" stroke="#334155"/>
+  <text x="268" y="294" fill="#34d399" font-family="ui-monospace, monospace" font-size="11">Creep: 1.2 mm</text>
+  <rect x="66" y="308" width="300" height="24" rx="5" fill="#1e293b" stroke="#334155"/>
+  <text x="76" y="324" fill="#e2e8f0" font-family="-apple-system, sans-serif" font-size="11">Flyleaves: +2 pp Front &amp; Back (1 leaf each)  ▾</text>
+
+  <text x="66" y="356" fill="#f59e0b" font-family="-apple-system, sans-serif" font-size="10.5" font-weight="700">4. DUPLEX PRINTER CALIBRATION (VERSO X/Y)</text>
+  <rect x="66" y="364" width="145" height="24" rx="5" fill="#090d16" stroke="#f59e0b" stroke-width="1"/>
+  <text x="76" y="380" fill="#fde68a" font-family="ui-monospace, monospace" font-size="11">Verso dX: +1.25 mm</text>
+  <rect x="221" y="364" width="145" height="24" rx="5" fill="#090d16" stroke="#f59e0b" stroke-width="1"/>
+  <text x="231" y="380" fill="#fde68a" font-family="ui-monospace, monospace" font-size="11">Verso dY: -0.50 mm</text>
+  <rect x="66" y="394" width="300" height="24" rx="5" fill="#1e293b" stroke="#475569"/>
+  <text x="216" y="410" fill="#f8fafc" font-family="-apple-system, sans-serif" font-size="11" text-anchor="middle">Export Printable Duplex Calibration Sheet (PDF)…</text>
+
+  <text x="66" y="440" fill="#a5b4fc" font-family="-apple-system, sans-serif" font-size="10.5" font-weight="700">5. PREPRESS MARKS &amp; SPINE COLLATING</text>
+  <text x="66" y="460" fill="#e2e8f0" font-family="-apple-system, sans-serif" font-size="11">☑ Fold / Guillotine Line      ☑ Corner Crop Marks</text>
+  <text x="66" y="480" fill="#e2e8f0" font-family="-apple-system, sans-serif" font-size="11">☑ Registration Targets        ☑ Spine Collating Marks</text>
+  <text x="66" y="500" fill="#e2e8f0" font-family="-apple-system, sans-serif" font-size="11">☑ Technical Sheet Slug        Page #: Bottom Outer</text>
+
+  <rect x="66" y="518" width="160" height="30" rx="6" fill="#0284c7"/>
+  <text x="146" y="537" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="12" font-weight="700" text-anchor="middle">Export Imposed PDF…</text>
+  <rect x="234" y="518" width="70" height="30" rx="6" fill="#1e293b" stroke="#334155"/>
+  <text x="269" y="537" fill="#e2e8f0" font-family="-apple-system, sans-serif" font-size="12" text-anchor="middle">Print…</text>
+  <rect x="312" y="518" width="54" height="30" rx="6" fill="#1e293b" stroke="#334155"/>
+  <text x="339" y="537" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="11" text-anchor="middle">↺</text>
+
+  <text x="216" y="570" fill="#64748b" font-family="ui-monospace, monospace" font-size="10.5" text-anchor="middle">OpenBooklet v1.0.0 · MIT License · GitHub ↗</text>
+
+  <!-- Right Live Retina PDFView Workspace -->
+  <text x="412" y="102" fill="#f8fafc" font-family="-apple-system, sans-serif" font-size="12.5" font-weight="600">
+    Side 1 of 16  —  Sheet 1 (Recto / Front)  |  Signature 1/2 (Outermost Sheet)
+  </text>
+
+  <!-- Sheet Canvas -->
+  <rect x="430" y="122" width="684" height="414" rx="4" fill="#ffffff" stroke="#475569" stroke-width="1.5"/>
+
+  <!-- Registration Targets on Canvas -->
+  <circle cx="772" cy="138" r="6" fill="none" stroke="#0f172a" stroke-width="1"/>
+  <line x1="762" y1="138" x2="782" y2="138" stroke="#0f172a" stroke-width="1"/>
+  <line x1="772" y1="128" x2="772" y2="148" stroke="#0f172a" stroke-width="1"/>
+
+  <circle cx="772" cy="520" r="6" fill="none" stroke="#0f172a" stroke-width="1"/>
+  <line x1="762" y1="520" x2="782" y2="520" stroke="#0f172a" stroke-width="1"/>
+  <line x1="772" y1="510" x2="772" y2="530" stroke="#0f172a" stroke-width="1"/>
+
+  <!-- Left Imposed Slot (Page 16) -->
+  <rect x="466" y="154" width="292" height="346" fill="#f8fafc" stroke="#1e293b" stroke-width="1.5"/>
+  <text x="612" y="325" fill="#1e293b" font-family="-apple-system, sans-serif" font-size="68" font-weight="800" text-anchor="middle">16</text>
+  <text x="612" y="362" fill="#64748b" font-family="-apple-system, sans-serif" font-size="13" text-anchor="middle">Signature 1 · Outermost Left</text>
+  <text x="488" y="486" fill="#475569" font-family="ui-monospace, monospace" font-size="11">16</text>
+
+  <!-- Right Imposed Slot (Page 1) -->
+  <rect x="786" y="154" width="292" height="346" fill="#f8fafc" stroke="#1e293b" stroke-width="1.5"/>
+  <text x="932" y="325" fill="#0284c7" font-family="-apple-system, sans-serif" font-size="68" font-weight="800" text-anchor="middle">1</text>
+  <text x="932" y="362" fill="#64748b" font-family="-apple-system, sans-serif" font-size="13" text-anchor="middle">Signature 1 · Outermost Right</text>
+  <text x="1056" y="486" fill="#475569" font-family="ui-monospace, monospace" font-size="11">1</text>
+
+  <!-- Central Fold Line & Stepped Spine Collating Mark -->
+  <line x1="772" y1="122" x2="772" y2="536" stroke="#64748b" stroke-width="1.2" stroke-dasharray="6,5"/>
+  <rect x="767" y="180" width="10" height="26" fill="#0f172a"/>
+  <text x="772" y="197" fill="#ffffff" font-family="ui-monospace, monospace" font-size="10" font-weight="700" text-anchor="middle">1</text>
+
+  <!-- Technical Prepress Slug -->
+  <text x="454" y="528" fill="#475569" font-family="ui-monospace, monospace" font-size="9.5">
+    OpenBooklet | Job: book-manuscript.pdf | Mode: SIGNATURES | Sheet 1 (Recto) | Sig 1/2 | 842x595 pt | Duplex dX=+1.2mm dY=-0.5mm
+  </text>
+
+  <!-- Bottom Preflight Bar -->
+  <text x="412" y="566" fill="#34d399" font-family="ui-monospace, monospace" font-size="11.5" font-weight="600">
+    ✓ Preflight OK: 32 pp exact (+4 flyleaves) • 9 physical sheets (2 signatures) • TrimBox Auto • Duplex Calibrated
+  </text>
+</svg>

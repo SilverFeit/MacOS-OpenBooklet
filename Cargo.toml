@@ -1,0 +1,16 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/openbooklet-core",
+    "crates/openbooklet-pdf",
+    "crates/openbooklet-cli",
+    "crates/openbooklet-app",
+]
+
+[workspace.package]
+version = "1.0.0"
+edition = "2021"
+authors = ["SilverFeit <danielsanchez.fr@academia.umb.edu.co>"]
+license = "MIT"
+repository = "https://github.com/SilverFeit/MacOS-OpenBooklet"
+homepage = "https://github.com/SilverFeit/MacOS-OpenBooklet"

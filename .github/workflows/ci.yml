@@ -1,0 +1,17 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-and-test:
+    runs-on: macos-14
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run Clean-Room Core & Vector PDF Tests
+        run: cargo test
+      - name: Package Release App Bundle, CLI & DMG
+        run: ./Scripts/package_release.sh

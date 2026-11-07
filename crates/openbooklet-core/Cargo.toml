@@ -1,0 +1,12 @@
+[package]
+name = "openbooklet-core"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "Clean-room PDF imposition, bookbinding signature, cut-and-stack, duplex calibration, and prepress geometry engine"
+
+[lib]
+name = "openbooklet_core"
+path = "src/lib.rs"
