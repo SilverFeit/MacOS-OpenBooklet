@@ -28,20 +28,14 @@ ditto --norsrc --noextattr "${APP_BUNDLE}" "${DMG_STAGE}/${APP_NAME}.app"
 ln -s /Applications "${DMG_STAGE}/Applications"
 cp "${APP_BUNDLE}/Contents/Resources/AppIcon.icns" "${DMG_STAGE}/.VolumeIcon.icns"
 
-if diskutil image create --help >/dev/null 2>&1; then
-    diskutil image create from \
-        --format UDZO \
-        --volumeName "MacOS OpenBooklet" \
-        "${DMG_STAGE}" \
-        "${RELEASE_DIR}/${DMG_NAME}"
-else
-    hdiutil create \
-        -volname "MacOS OpenBooklet" \
-        -srcfolder "${DMG_STAGE}" \
-        -ov \
-        -format UDZO \
-        "${RELEASE_DIR}/${DMG_NAME}"
-fi
+# Prefer hdiutil: newer `diskutil image create from` accepts --format but not
+# --volumeName (macos-15 runners exit 64 with "Unknown option '--volumeName'").
+hdiutil create \
+    -volname "MacOS OpenBooklet" \
+    -srcfolder "${DMG_STAGE}" \
+    -ov \
+    -format UDZO \
+    "${RELEASE_DIR}/${DMG_NAME}"
 
 rm -rf "${DMG_STAGE}"
 
