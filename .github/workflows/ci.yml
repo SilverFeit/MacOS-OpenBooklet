@@ -8,10 +8,12 @@ on:
 
 jobs:
   build-and-test:
-    runs-on: macos-14
+    runs-on: macos-15
     steps:
       - uses: actions/checkout@v4
+      - name: Install Rust toolchain
+        uses: dtolnay/rust-toolchain@stable
       - name: Run Clean-Room Core & Vector PDF Tests
-        run: cargo test
+        run: cargo test --workspace
       - name: Package Release App Bundle, CLI & DMG
         run: ./Scripts/package_release.sh
